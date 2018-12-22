@@ -1,0 +1,28 @@
+{
+    "name": "fob/di-aura-filter-module",
+    "type": "project",
+    "description": "",
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.0.8",
+        "fob/formalbears": "^0.1.0",
+        "aura/filter": "^2.3"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^7.4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fob\\DiAuraFilterModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fob\\DiAuraFilterModule\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
