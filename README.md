@@ -1,11 +1,15 @@
 # Fob.DiAuraFilterModule
 
-- Aura.Filter カスタムバリデータクラスでDIが使えるようにするモジュール
-- FormalBears を使用
+[BEAR.Sunday](https://github.com/koriym/BEAR.Sunday) アプリケーションで
+[Aura.Filter(v2)](https://github.com/auraphp/Aura.Filter) カスタムルールを使うためのモジュール 
+
+- カスタムルールの構成を設定ファイルで定義できる
+- サービスのカスタムフィルタークラスにはDI（オートワイヤリング機能）を使うことができる
+- [FormalBears](https://github.com/kumamidori/FormalBears) を使用
 
 ## Setup
 
-1. バリデータの各サービスクラスはあらかじめ束縛構成済みとする
+1. カスタムフィルターの各サービスクラスはあらかじめ束縛構成済みとする
 2. モジュールをインストールする
    
 ```
@@ -14,8 +18,9 @@ $this->install(new DiAuraFilterModule($this->registry));
 
 ## Configure
 
-Aura/Filter バリデーターとサニタイザーをの構成を設定する
-不要な場合は設定無しで良い。
+設定ファイルでバリデーターとサニタイザーのカスタムルールを構成定義する。
+
+※さしあたって不要な場合は設定無しで良い。
 
 例：
 ```
